@@ -1,6 +1,3 @@
-
-
-
 # Output - EC2 instanec public ip for toset() function
 output "for_output_toset1" {
   description = "Public_ips for ec2 instnaces"
