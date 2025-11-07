@@ -1,0 +1,18 @@
+IF WE WANT to override the default varibale (Alreday defined existed variable) while creating the resource we can use terraform apply -var="variable_name=value"
+
+exammple:-
+terraform apply -var="s3_bucket_name=my-unique-bucket-name-12345"
+This will override the default value of variable s3_bucket_name while creating the resource.
+This method is useful when we want to create multiple resources with different variable values without changing the variable definition file.
+This method is also useful when we want to keep sensitive information like passwords or API keys out of our configuration files.
+Note: Make sure the variable name used in the command matches the variable name defined in the variable definition file.
+For example, if we have a variable defined as follows in our variables.tf file:
+variable "s3_bucket_name" {
+  description = "The name of the S3 bucket"
+  type        = string
+  default     = "my-default-bucket-name"
+}
+We can override the default value by using the following command:
+terraform apply -var="s3_bucket_name=my-unique-bucket-name-12345"
+This will create an S3 bucket with the name "my-unique-bucket-name-12345" instead of the default name "my-default-bucket-name".
+Make sure to run terraform plan first to see the changes that will be made before applying them.
