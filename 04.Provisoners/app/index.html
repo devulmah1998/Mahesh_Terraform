@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform Provisioners Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .info {
+            font-size: 1.2em;
+            margin: 15px 0;
+            opacity: 0.9;
+        }
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Terraform Provisioners Demo</h1>
+        <div class="info">
+            <p>Welcome to the <span class="highlight">Provisioners</span> example!</p>
+            <p>This HTML file was deployed using Terraform provisioners</p>
+        </div>
+        <div class="info">
+            <p><strong>Server Info:</strong></p>
+            <p>Environment: <span class="highlight" id="environment">Loading...</span></p>
+            <p>Instance: <span class="highlight" id="instance">Loading...</span></p>
+            <p>Deployed at: <span class="highlight" id="timestamp">Loading...</span></p>
+        </div>
+        <div class="footer">
+            <p>Managed by Terraform File Provisioner</p>
+        </div>
+    </div>
+
+    <script>
+        // Simulate loading server information
+        setTimeout(() => {
+            document.getElementById('environment').textContent = 'Development';
+            document.getElementById('instance').textContent = 'web-server-01';
+            document.getElementById('timestamp').textContent = new Date().toLocaleString();
+        }, 1000);
+    </script>
+</body>
+</html>
