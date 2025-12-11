@@ -38,3 +38,7 @@ resource "aws_instance" "myec2vm" {
   }
 }
 
+# after deployed the ec2 machine you will see ip address of the ec2 machine let's connect to the machine
+# via using below command in command line 
+# ssh -i terraform-key.pem ec2-user@ip_address 
+# you will able to connect to host by using connection block.

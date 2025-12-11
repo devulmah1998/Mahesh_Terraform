@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "hashicorp.terraform",
+    "4ops.terraform",
+    "ms-vscode.powershell",
+    "oderwat.indent-rainbow",
+    "PKief.material-icon-theme",
+    "zhuangtongfa.material-theme"
+  ]
+}

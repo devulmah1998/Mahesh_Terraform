@@ -1,0 +1,103 @@
+{
+  // ============================================
+  // EDITOR APPEARANCE & COLORS
+  // ============================================
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Cascadia Code', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 22,
+  "editor.letterSpacing": 0.5,
+  
+  // ============================================
+  // SYNTAX HIGHLIGHTING
+  // ============================================
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.indentation": true,
+  
+  // ============================================
+  // TERRAFORM SPECIFIC
+  // ============================================
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  
+  // ============================================
+  // COLOR CUSTOMIZATIONS
+  // ============================================
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#6A9955",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "keyword.control.terraform",
+        "settings": {
+          "foreground": "#C586C0",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "entity.name.type.terraform",
+        "settings": {
+          "foreground": "#4EC9B0",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "string.quoted.double.terraform",
+        "settings": {
+          "foreground": "#CE9178"
+        }
+      },
+      {
+        "scope": "variable.other.terraform",
+        "settings": {
+          "foreground": "#9CDCFE"
+        }
+      },
+      {
+        "scope": "constant.numeric.terraform",
+        "settings": {
+          "foreground": "#B5CEA8"
+        }
+      },
+      {
+        "scope": "entity.name.function.terraform",
+        "settings": {
+          "foreground": "#DCDCAA"
+        }
+      }
+    ]
+  },
+  
+  // ============================================
+  // MINIMAP & BREADCRUMBS
+  // ============================================
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "breadcrumbs.enabled": true,
+  
+  // ============================================
+  // TERRAFORM EXTENSION SETTINGS
+  // ============================================
+  "terraform.languageServer.enable": true,
+  "terraform.experimentalFeatures.validateOnSave": true,
+  "terraform.codelens.referenceCount": true,
+  "editor.guides.highlightActiveIndentation": true
+}
